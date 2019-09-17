@@ -5,4 +5,14 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DSharpPlus" Version="3.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Barney.Client.Core\Barney.Client.Core.csproj" />
+    <ProjectReference Include="..\Barney.Client.Data\Barney.Client.Data\Barney.Client.Data.csproj" />
+    <ProjectReference Include="..\Barney.Client.Services\Barney.Client.Services.csproj" />
+  </ItemGroup>
+
 </Project>

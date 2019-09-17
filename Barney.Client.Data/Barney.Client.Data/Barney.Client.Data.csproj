@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Barney.Client.Core\Barney.Client.Core.csproj" />
+  </ItemGroup>
+
 </Project>

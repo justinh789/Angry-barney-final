@@ -6,7 +6,7 @@ namespace Barney.Client.Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           
         }
     }
 }
