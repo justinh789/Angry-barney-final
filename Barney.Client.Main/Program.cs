@@ -18,7 +18,6 @@ namespace Barney.Client.Main
 
             DiscordSubscriptions.MainAsync(args, provider).ConfigureAwait(false).GetAwaiter().GetResult();
 
-
         }
 
        
