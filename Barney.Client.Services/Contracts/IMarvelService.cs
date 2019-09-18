@@ -5,8 +5,8 @@ using System.Text;
 
 namespace Barney.Client.Services.Contracts
 {
-    interface IMarvelService
+    public interface IMarvelService : IDisposable
     {
-        IEnumerable<MarvelCharacter> GetRandomCharacters();
+        IEnumerable<MarvelCharacter> GetRandomCharacter();
     }
 }

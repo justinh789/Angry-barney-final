@@ -3,24 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barney.Client.Core", "Barney.Client.Core\Barney.Client.Core.csproj", "{6318848F-7865-4E62-82F4-5C7FB2B73F67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Barney.Client.Core", "Barney.Client.Core\Barney.Client.Core.csproj", "{6318848F-7865-4E62-82F4-5C7FB2B73F67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barney.Client.Data", "Barney.Client.Data\Barney.Client.Data\Barney.Client.Data.csproj", "{C20FCF0F-84DB-4C49-910F-52868FAB1DC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Barney.Client.Data", "Barney.Client.Data\Barney.Client.Data\Barney.Client.Data.csproj", "{C20FCF0F-84DB-4C49-910F-52868FAB1DC2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6318848F-7865-4E62-82F4-5C7FB2B73F67} = {6318848F-7865-4E62-82F4-5C7FB2B73F67}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barney.Client.Services", "Barney.Client.Services\Barney.Client.Services.csproj", "{F6171BEE-53A3-4545-B24C-FADB2ED0232C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Barney.Client.Services", "Barney.Client.Services\Barney.Client.Services.csproj", "{F6171BEE-53A3-4545-B24C-FADB2ED0232C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C20FCF0F-84DB-4C49-910F-52868FAB1DC2} = {C20FCF0F-84DB-4C49-910F-52868FAB1DC2}
 		{6318848F-7865-4E62-82F4-5C7FB2B73F67} = {6318848F-7865-4E62-82F4-5C7FB2B73F67}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barney.Client.Main", "Barney.Client.Main\Barney.Client.Main.csproj", "{38AF5CF9-7938-46BE-BA76-31C531A00156}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Barney.Client.Main", "Barney.Client.Main\Barney.Client.Main.csproj", "{38AF5CF9-7938-46BE-BA76-31C531A00156}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C20FCF0F-84DB-4C49-910F-52868FAB1DC2} = {C20FCF0F-84DB-4C49-910F-52868FAB1DC2}
 		{6318848F-7865-4E62-82F4-5C7FB2B73F67} = {6318848F-7865-4E62-82F4-5C7FB2B73F67}
 		{F6171BEE-53A3-4545-B24C-FADB2ED0232C} = {F6171BEE-53A3-4545-B24C-FADB2ED0232C}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7B94791E-0436-4739-BFE1-B5A39022FAB0}"
+	ProjectSection(SolutionItems) = preProject
+		Notes.txt = Notes.txt
 	EndProjectSection
 EndProject
 Global
