@@ -8,7 +8,7 @@ namespace Barney.Client.Main
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var services = new ServiceCollection();
                 services.AddSingleton<IMarvelService, MarvelService>();
@@ -16,19 +16,11 @@ namespace Barney.Client.Main
             var provider = services.BuildServiceProvider();
 
 
-            var marvelCharacters = provider.GetService<IMarvelService>().GetRandomCharacter();
+            DiscordSubscriptions.MainAsync(args, provider).ConfigureAwait(false).GetAwaiter().GetResult();
 
-            foreach(var character in marvelCharacters)
-            {
-                Console.WriteLine("Name: " + character.Name + ". Age: " + character.Age +  ". Superpowers: " + character?.Superpowers?.ToString());
-            }
 
-            Console.WriteLine();
-         }
+        }
 
-        //static async Task MainAsync(string[] args)
-        //{
-
-        //}
+       
     }
 }
