@@ -7,6 +7,6 @@ namespace Barney.Client.Services.Contracts
 {
     public interface IMarvelService : IDisposable
     {
-        IEnumerable<MarvelCharacter> GetRandomCharacter();
+        IEnumerable<MarvelCharacter> GetRandomCharacters();
     }
 }

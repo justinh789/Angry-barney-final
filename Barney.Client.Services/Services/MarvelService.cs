@@ -13,7 +13,7 @@ namespace Barney.Client.Services.Services
             throw new NotImplementedException();
         }
 
-        public IEnumerable<MarvelCharacter> GetRandomCharacter()
+        public IEnumerable<MarvelCharacter> GetRandomCharacters()
         {
             List<MarvelCharacter> mock = new List<MarvelCharacter>();
 
